@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "title": "What is React ?",
+    "description": "- React \n is a **JavaScript** library for building user interfaces.\n\n- It lets you build **reusable** components instead of writing everything from scratch.\n\n- React 19 introduces faster updates, improved hooks, better **server components**, and async features.\n",
+    "code": "const MyComponent = () => return <div>Hello, World!</div>;",
+    "language": "jsx"
+  },
+  {
+    "id": 2,
+    "title": "Setting up React 19",
+    "description": "You can create a new React 19 project in two main ways:\n\n- Option A: With Vite (recommended)\n- Option B: With Create React App (older way, not recommended anymore)\n  \n``` \nnpx create-react-app my-app\ncd my-app\nnpm start\n```",
+    "code": "npm create vite@latest my-app\r\ncd my-app\r\nnpm install\r\nnpm run dev\r\n",
+    "language": "shell"
+  },
+  {
+    "id": 3,
+    "title": "The First Component",
+    "description": "In React, everything is a component (a reusable piece of UI).\n\nReact components:\n\n- Always return JSX (HTML + JS together).\n\n- Must start with a **capital letter** (App, not app).",
+    "code": "function App() {\r\n  return (\r\n    <div>\r\n      <h1>Hello, React 19 🚀</h1>\r\n      <p>This is my first component.</p>\r\n    </div>\r\n  );\r\n}\r\n\r\nexport default App;\r\n",
+    "language": "javascript"
+  },
+  {
+    "id": 4,
+    "title": "JSX Basics",
+    "description": "JSX looks like HTML, but it’s JavaScript underneath.\n\n- Use  { } to inject variables or expressions.",
+    "code": "function Greeting() {\r\n  const name = \"Venkat\";\r\n  return <h2>Hello, {name} 👋</h2>;\r\n}\r\n",
+    "language": "javascript"
+  },
+  {
+    "id": 5,
+    "title": "Props (Passing Data)",
+    "description": "Props let you pass data into components.",
+    "code": "function Welcome({ user }) {\r\n  return <h3>Welcome, {user}!</h3>;\r\n}\r\n\r\nfunction App() {\r\n  return <Welcome user=\"Alice\" />;\r\n}\r\n",
+    "language": "javascript"
+  },
+  {
+    "id": 6,
+    "title": "State (Dynamic Data with Hooks)",
+    "description": "React’s useState lets components “remember” data.",
+    "code": "import { useState } from \"react\";\r\n\r\nfunction Counter() {\r\n  const [count, setCount] = useState(0);\r\n\r\n  return (\r\n    <div>\r\n      <p>You clicked {count} times</p>\r\n      <button onClick={() => setCount(count + 1)}>Click Me</button>\r\n    </div>\r\n  );\r\n}\r\n",
+    "language": "javascript"
+  },
+  {
+    "id": 7,
+    "title": "7. Handling Events",
+    "description": "Events are written in **camelCase** and take a function.",
+    "code": "function Button() {\r\n  function handleClick() {\r\n    alert(\"Button clicked!\");\r\n  }\r\n\r\n  return <button onClick={handleClick}>Click Me</button>;\r\n}\r\n",
+    "language": "javascript"
+  },
+  {
+    "id": 8,
+    "title": "Lists & Keys",
+    "description": "Rendering lists dynamically:",
+    "code": "function TodoList() {\r\n  const todos = [\"Learn React\", \"Build App\", \"Deploy\"];\r\n\r\n  return (\r\n    <ul>\r\n      {todos.map((todo, index) => (\r\n        <li key={index}>{todo}</li>\r\n      ))}\r\n    </ul>\r\n  );\r\n}\r\n",
+    "language": "javascript"
+  },
+  {
+    "id": 9,
+    "title": "Conditional Rendering",
+    "description": "Show elements only when needed:",
+    "code": "function UserGreeting({ isLoggedIn }) {\r\n  return (\r\n    <div>\r\n      {isLoggedIn ? <h2>Welcome back!</h2> : <h2>Please log in</h2>}\r\n    </div>\r\n  );\r\n}\r\n",
+    "language": "javascript"
+  },
+  {
+    "id": 10,
+    "title": "10. New in React 19 (Highlights 🎉)",
+    "description": "- Better  rendering performance (fewer re-renders).\n\n- Improved Hooks like use (async/await inside components).\n\n- Actions for forms (server actions in Next.js/Remix).\n\n- Smaller bundle size with optimizations.\n\n- Simpler context and memoization rules.\n \n**Example**: Using use with async data (React 19+ only):",
+    "code": "import { use } from \"react\";\r\n\r\nasync function fetchMessage() {\r\n  return \"Hello from async React 19!\";\r\n}\r\n\r\nfunction App() {\r\n  const message = use(fetchMessage());\r\n  return <h1>{message}</h1>;\r\n}\r\n",
+    "language": "javascript"
+  },
+  {
+    "id": 11,
+    "title": "Outcomes",
+    "description": "✅ By now people will understand:\n\nWhat React is\n\n- JSX\n\n- Props\n\n- State & Hooks\n\n- Events\n\n- Lists & keys\n\n- Conditional rendering\n\n- React 19 new features",
+    "code": "You now know what is react....",
+    "language": "html"
+  }
+]
