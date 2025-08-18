@@ -1,1 +1,51 @@
-
+[
+  {
+    "id": "4699e54c-9135-44fd-903e-56298eb1274c",
+    "name": "JS",
+    "category": "folder",
+    "type": "default",
+    "tags": [
+      "javascript"
+    ],
+    "children": []
+  },
+  {
+    "id": "a8661089-e38f-46bc-bbec-f6a52a5d5c72",
+    "name": "TS",
+    "category": "folder",
+    "tags": [],
+    "children": []
+  },
+  {
+    "id": "60fe75e7-9166-4202-af82-b0de9b3a7ff7",
+    "name": "React",
+    "category": "folder",
+    "tags": [],
+    "children": [
+      {
+        "id": "8bd521b8-f87c-4aa1-8e18-52dd823c296b",
+        "name": "React Basics",
+        "category": "folder",
+        "type": "model",
+        "tags": [],
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "a8e94b85-2d46-4832-8865-8218459172bc",
+    "name": "Python",
+    "category": "folder",
+    "tags": [
+      "python"
+    ],
+    "children": []
+  },
+  {
+    "id": "7dbd00e2-003e-49ba-bb71-b55e46b10056",
+    "name": "Django",
+    "category": "folder",
+    "tags": [],
+    "children": []
+  }
+]
