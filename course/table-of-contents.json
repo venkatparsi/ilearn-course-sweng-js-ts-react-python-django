@@ -28,7 +28,15 @@
         "category": "folder",
         "type": "model",
         "tags": [],
-        "children": []
+        "children": [
+          {
+            "id": "1b22ede9-e3ac-4ca0-a09b-903da76d3720",
+            "name": "Simpler react",
+            "category": "url",
+            "tags": [],
+            "url": "https://raw.githubusercontent.com/venkatparsi/ilearn-course-sweng-js-ts-react-python-django/refs/heads/master/course/content/React/basics/react-in-10-steps.json"
+          }
+        ]
       }
     ]
   },
